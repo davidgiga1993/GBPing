@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		49E831821B68BD8F00672E0D /* GBPingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E831811B68BD8F00672E0D /* GBPingTests.m */; };
 		49E831831B68BD8F00672E0D /* libGBPing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADF26B81647CC1F000240C2 /* libGBPing.a */; };
+		6368BBD3256F8B4200BCEA69 /* GBPingFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6368BBCA256F8B4200BCEA69 /* GBPingFramework.framework */; };
+		6368BBD8256F8B4200BCEA69 /* GBPingFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6368BBD7256F8B4200BCEA69 /* GBPingFrameworkTests.m */; };
+		6368BBDA256F8B4200BCEA69 /* GBPingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6368BBCC256F8B4200BCEA69 /* GBPingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6368BBE7256F8B7400BCEA69 /* GBPing.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADF26C01647CC1F000240C2 /* GBPing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6368BBEC256F8BB500BCEA69 /* GBPingSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF26E11647D4B0000240C2 /* GBPingSummary.m */; };
+		6368BBED256F8BB500BCEA69 /* GBPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADF26C21647CC1F000240C2 /* GBPing.m */; };
+		6368BBFA2571369100BCEA69 /* GBPingSummary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ADF26E01647D4B0000240C2 /* GBPingSummary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A70AC3D16526C7500409BAF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A70AC3C16526C7500409BAF /* CFNetwork.framework */; };
 		8ADF26BC1647CC1F000240C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ADF26BB1647CC1F000240C2 /* Foundation.framework */; };
 		8ADF26C11647CC1F000240C2 /* GBPing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8ADF26C01647CC1F000240C2 /* GBPing.h */; };
@@ -23,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8ADF26B71647CC1F000240C2;
 			remoteInfo = GBPing;
+		};
+		6368BBD4256F8B4200BCEA69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ADF26AF1647CC1F000240C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6368BBC9256F8B4200BCEA69;
+			remoteInfo = GBPingFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,6 +57,12 @@
 		49E8317D1B68BD8F00672E0D /* GBPingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBPingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E831801B68BD8F00672E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49E831811B68BD8F00672E0D /* GBPingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBPingTests.m; sourceTree = "<group>"; };
+		6368BBCA256F8B4200BCEA69 /* GBPingFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GBPingFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6368BBCC256F8B4200BCEA69 /* GBPingFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBPingFramework.h; sourceTree = "<group>"; };
+		6368BBCD256F8B4200BCEA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6368BBD2256F8B4200BCEA69 /* GBPingFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBPingFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6368BBD7256F8B4200BCEA69 /* GBPingFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBPingFrameworkTests.m; sourceTree = "<group>"; };
+		6368BBD9256F8B4200BCEA69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A56803C1654FD2D0096DB72 /* ICMPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICMPHeader.h; sourceTree = "<group>"; };
 		8A70AC3C16526C7500409BAF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8ADF26B81647CC1F000240C2 /* libGBPing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGBPing.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +80,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E831831B68BD8F00672E0D /* libGBPing.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6368BBC7256F8B4200BCEA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6368BBCF256F8B4200BCEA69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6368BBD3256F8B4200BCEA69 /* GBPingFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,11 +127,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6368BBCB256F8B4200BCEA69 /* GBPingFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6368BBCC256F8B4200BCEA69 /* GBPingFramework.h */,
+				6368BBCD256F8B4200BCEA69 /* Info.plist */,
+			);
+			path = GBPingFramework;
+			sourceTree = "<group>";
+		};
+		6368BBD6256F8B4200BCEA69 /* GBPingFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6368BBD7256F8B4200BCEA69 /* GBPingFrameworkTests.m */,
+				6368BBD9256F8B4200BCEA69 /* Info.plist */,
+			);
+			path = GBPingFrameworkTests;
+			sourceTree = "<group>";
+		};
 		8ADF26AD1647CC1F000240C2 = {
 			isa = PBXGroup;
 			children = (
 				8ADF26BD1647CC1F000240C2 /* GBPing */,
 				49E8317E1B68BD8F00672E0D /* GBPingTests */,
+				6368BBCB256F8B4200BCEA69 /* GBPingFramework */,
+				6368BBD6256F8B4200BCEA69 /* GBPingFrameworkTests */,
 				8ADF26BA1647CC1F000240C2 /* Frameworks */,
 				8ADF26B91647CC1F000240C2 /* Products */,
 			);
@@ -107,6 +162,8 @@
 			children = (
 				8ADF26B81647CC1F000240C2 /* libGBPing.a */,
 				49E8317D1B68BD8F00672E0D /* GBPingTests.xctest */,
+				6368BBCA256F8B4200BCEA69 /* GBPingFramework.framework */,
+				6368BBD2256F8B4200BCEA69 /* GBPingFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +208,19 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6368BBC5256F8B4200BCEA69 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6368BBDA256F8B4200BCEA69 /* GBPingFramework.h in Headers */,
+				6368BBFA2571369100BCEA69 /* GBPingSummary.h in Headers */,
+				6368BBE7256F8B7400BCEA69 /* GBPing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		49E8317C1B68BD8F00672E0D /* GBPingTests */ = {
 			isa = PBXNativeTarget;
@@ -168,6 +238,42 @@
 			name = GBPingTests;
 			productName = GBPingTests;
 			productReference = 49E8317D1B68BD8F00672E0D /* GBPingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6368BBC9256F8B4200BCEA69 /* GBPingFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6368BBDF256F8B4200BCEA69 /* Build configuration list for PBXNativeTarget "GBPingFramework" */;
+			buildPhases = (
+				6368BBC5256F8B4200BCEA69 /* Headers */,
+				6368BBC6256F8B4200BCEA69 /* Sources */,
+				6368BBC7256F8B4200BCEA69 /* Frameworks */,
+				6368BBC8256F8B4200BCEA69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBPingFramework;
+			productName = GBPingFramework;
+			productReference = 6368BBCA256F8B4200BCEA69 /* GBPingFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6368BBD1256F8B4200BCEA69 /* GBPingFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6368BBE0256F8B4200BCEA69 /* Build configuration list for PBXNativeTarget "GBPingFrameworkTests" */;
+			buildPhases = (
+				6368BBCE256F8B4200BCEA69 /* Sources */,
+				6368BBCF256F8B4200BCEA69 /* Frameworks */,
+				6368BBD0256F8B4200BCEA69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6368BBD5256F8B4200BCEA69 /* PBXTargetDependency */,
+			);
+			name = GBPingFrameworkTests;
+			productName = GBPingFrameworkTests;
+			productReference = 6368BBD2256F8B4200BCEA69 /* GBPingFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		8ADF26B71647CC1F000240C2 /* GBPing */ = {
@@ -199,6 +305,16 @@
 					49E8317C1B68BD8F00672E0D = {
 						CreatedOnToolsVersion = 6.4;
 					};
+					6368BBC9256F8B4200BCEA69 = {
+						CreatedOnToolsVersion = 12.2;
+						DevelopmentTeam = 5QV7ZAJ3W5;
+						ProvisioningStyle = Automatic;
+					};
+					6368BBD1256F8B4200BCEA69 = {
+						CreatedOnToolsVersion = 12.2;
+						DevelopmentTeam = 5QV7ZAJ3W5;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 8ADF26B21647CC1F000240C2 /* Build configuration list for PBXProject "GBPing" */;
@@ -206,6 +322,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 8ADF26AD1647CC1F000240C2;
@@ -215,12 +332,28 @@
 			targets = (
 				8ADF26B71647CC1F000240C2 /* GBPing */,
 				49E8317C1B68BD8F00672E0D /* GBPingTests */,
+				6368BBC9256F8B4200BCEA69 /* GBPingFramework */,
+				6368BBD1256F8B4200BCEA69 /* GBPingFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		49E8317B1B68BD8F00672E0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6368BBC8256F8B4200BCEA69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6368BBD0256F8B4200BCEA69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -235,6 +368,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E831821B68BD8F00672E0D /* GBPingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6368BBC6256F8B4200BCEA69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6368BBEC256F8BB500BCEA69 /* GBPingSummary.m in Sources */,
+				6368BBED256F8BB500BCEA69 /* GBPing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6368BBCE256F8B4200BCEA69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6368BBD8256F8B4200BCEA69 /* GBPingFrameworkTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +404,11 @@
 			isa = PBXTargetDependency;
 			target = 8ADF26B71647CC1F000240C2 /* GBPing */;
 			targetProxy = 49E831841B68BD8F00672E0D /* PBXContainerItemProxy */;
+		};
+		6368BBD5256F8B4200BCEA69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6368BBC9256F8B4200BCEA69 /* GBPingFramework */;
+			targetProxy = 6368BBD4256F8B4200BCEA69 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -319,6 +474,148 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anyone.ceshi.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6368BBDB256F8B4200BCEA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5QV7ZAJ3W5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GBPingFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devcore.GBPingFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6368BBDC256F8B4200BCEA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5QV7ZAJ3W5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GBPingFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devcore.GBPingFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6368BBDD256F8B4200BCEA69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5QV7ZAJ3W5;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GBPingFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devcore.GBPingFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6368BBDE256F8B4200BCEA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5QV7ZAJ3W5;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = GBPingFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.devcore.GBPingFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -450,6 +747,24 @@
 			buildConfigurations = (
 				49E831871B68BD8F00672E0D /* Debug */,
 				49E831881B68BD8F00672E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6368BBDF256F8B4200BCEA69 /* Build configuration list for PBXNativeTarget "GBPingFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6368BBDB256F8B4200BCEA69 /* Debug */,
+				6368BBDC256F8B4200BCEA69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6368BBE0256F8B4200BCEA69 /* Build configuration list for PBXNativeTarget "GBPingFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6368BBDD256F8B4200BCEA69 /* Debug */,
+				6368BBDE256F8B4200BCEA69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

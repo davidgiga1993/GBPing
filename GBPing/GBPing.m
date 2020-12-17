@@ -48,8 +48,11 @@ static NSTimeInterval const kDefaultTimeout =           2.0;
 @property (strong, atomic) NSMutableDictionary          *pendingPings;
 @property (strong, nonatomic) NSMutableDictionary       *timeoutTimers;
 
+#if OS_OBJECT_USE_OBJC
 @property (strong, nonatomic) dispatch_queue_t          setupQueue;
-
+#else
+@property (assign, nonatomic) dispatch_queue_t          setupQueue;
+#endif
 @property (assign, atomic) BOOL                         isStopped;
 
 @end
